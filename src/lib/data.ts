@@ -15,11 +15,12 @@ export const projects = [
   {
     id: 'ai-dashboard',
     title: 'AI content dashboard',
+    image: '/projects/ai-dashboard.png', 
     description:
       'A SaaS-style web app where users generate, manage, and export AI-written content. Built with Next.js App Router, Vercel AI SDK for streaming responses, and localStorage for persistence. Features real-time output, tone selector, content history, and dark mode.',
-    thumb: 'AI SaaS Dashboard · Next.js',
-    thumbClass: 'thumb-blue',
-    thumbIcon: '⚡',
+    // thumb: 'AI SaaS Dashboard · Next.js',
+    // thumbClass: 'thumb-blue',
+    // thumbIcon: '⚡',
     badges: ['Next.js 14', 'TypeScript', 'Claude API', 'Tailwind'],
     metrics: [
       { label: 'Streaming', value: 'responses' },
@@ -34,24 +35,26 @@ export const projects = [
   {
     id: 'ecommerce',
     title: 'E-commerce storefront',
+    image: '/projects/lumiere.png',
     description:
       'A fully responsive product listing, cart, and checkout flow. Focus on performance — 98 Lighthouse score, accessible, mobile-first.',
-    thumb: 'E-commerce UI · React',
-    thumbClass: 'thumb-teal',
-    thumbIcon: '🛒',
+    // thumb: 'E-commerce UI · React',
+    // thumbClass: 'thumb-teal',
+    // thumbIcon: '🛒',
     badges: ['React', 'TypeScript', 'Tailwind'],
     metrics: [
       { label: '98', value: 'Lighthouse' },
       { label: 'Mobile', value: 'first' },
     ],
-    demo: '#',
-    github: '#',
+    demo: 'https://lumiere-storefront-gamma.vercel.app',
+    github: 'https://github.com/Emak-star/lumiere-storefront',
     caseStudy: '#',
     featured: false,
   },
   {
     id: 'ai-chat',
     title: 'AI chat interface',
+    image: '/projects/ai-chat.png',
     description:
       'A clean, streaming chat UI built on Next.js. Supports markdown rendering, conversation history, and custom system prompts.',
     thumb: 'AI Chat UI · Next.js',

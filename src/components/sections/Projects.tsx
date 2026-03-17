@@ -31,19 +31,17 @@ function ProjectCard({ project }: { project: Project }) {
     }} className="project-card">
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr' }} className="featured-inner">
         {/* Thumb */}
-        <div style={{
-          aspectRatio: '16/10',
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          fontFamily: 'var(--mono)', fontSize: 12, color: 'var(--text3)',
-          letterSpacing: '0.04em', padding: '2rem',
-          position: 'relative', overflow: 'hidden',
-          background: thumbBg[project.thumbClass],
-        }}>
-          <span style={{
-            fontSize: 40, opacity: 0.25, position: 'absolute',
-            right: '1.5rem', top: '50%', transform: 'translateY(-50%)',
-          }}>{project.thumbIcon}</span>
-          <span>{project.thumb}</span>
+        <div className="project-thumb" style={{ padding: 0 }}>
+          <img
+            src={project.image}
+            alt={project.title}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              objectPosition: 'top',
+            }}
+          />
         </div>
 
         {/* Body */}
@@ -91,19 +89,17 @@ function SmallCard({ project }: { project: Project }) {
       background: 'var(--surface)', border: '1px solid var(--border)',
       borderRadius: 12, overflow: 'hidden',
     }} className="project-card">
-      <div style={{
-        aspectRatio: '16/10',
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
-        fontFamily: 'var(--mono)', fontSize: 12, color: 'var(--text3)',
-        letterSpacing: '0.04em', padding: '2rem',
-        position: 'relative', overflow: 'hidden',
-        background: thumbBg[project.thumbClass],
-      }}>
-        <span style={{
-          fontSize: 40, opacity: 0.25, position: 'absolute',
-          right: '1.5rem', top: '50%', transform: 'translateY(-50%)',
-        }}>{project.thumbIcon}</span>
-        <span>{project.thumb}</span>
+      <div className="project-thumb" style={{ padding: 0 }}>
+        <img
+          src={project.image}
+          alt={project.title}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: 'top',
+          }}
+        />
       </div>
       <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: 10 }}>
         <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
