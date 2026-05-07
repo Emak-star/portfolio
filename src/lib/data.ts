@@ -12,6 +12,22 @@ export const siteConfig = {
 }
 
 export const projects = [
+   {
+    id: 'belli-studio',
+    title: 'Belli Creative Studio',
+    description: 'Full website for a Lagos-based creative agency. Built as an unsolicited pitch — includes animated hero, services section, portfolio grid, and contact form.',
+    badges: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
+    image: '/projects/belli.png',
+    demo: 'https://belli-studio.vercel.app',       // your live URL or '#'
+    github: 'https://github.com/Emak-star/belli-studio', // or '#'
+    caseStudy: '#',
+    featured: true,                                // ← this makes it the big card
+    metrics: [
+      { label: 'Type', value: 'Agency website' },
+      { label: 'Stack', value: 'Next.js + Framer Motion' },
+      { label: 'Built', value: '2025' },
+    ],
+  },
   {
     id: 'ai-dashboard',
     title: 'AI content dashboard',
